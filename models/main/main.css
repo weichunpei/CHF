@@ -1,0 +1,308 @@
+/*头部开始*/
+.tHeade{
+	height: 174px;
+	
+}
+/*头部结束*/
+/*轮播图开始*/
+.banner{
+	height: 500px;
+	position: relative;
+	margin-top: 19px;
+
+}
+
+/*轮播图结束*/
+/*热门商品开始*/
+.hotGoods{
+	height: 162px;
+	padding-top: 20px;
+}
+.hotGoods .hotGoodsTitle{
+	width: 265px;
+	height: 140px;
+	background: url(hot1.png) no-repeat;
+	position: relative;
+}
+.hotGoods .hotGoodsTitle a i{
+	width: 32px;
+	height: 32px;
+	padding: 0 10px;
+	
+	
+}
+.hotGoods .hotGoodsTitle a{
+	font-size: 16px;
+	width: 160px;
+	height: 32px;
+	color: #FFF;
+	display: inline-block;
+	text-align: center;
+	line-height: 32px;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	background-color:rgba(255,0,0,0.1);
+	
+}
+.hotGoods .hotGoodsTitle a:after{
+	content: '';
+	width: 23px;
+	height: 23px;
+	background-color:rgba(237,0,0,1);
+	display: inline-block;
+	position: absolute;
+	right: -12px;
+	bottom: 5px;
+	transform: rotateZ(45deg);
+	
+}
+.hotGoods .hotGoodsContent{
+	width: 270px;
+	height: 140px;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(217,217,217,1);
+	position: relative;
+}
+.hotGoods .hotGoodsContent .hotGoodsContentImg{
+	width: 100px;
+	margin:10px ;
+}
+.hotGoods .hotGoodsContent .hotGoodsContentImg img{
+	width: 100%;
+}
+.hotGoods .hotGoodsContent .hotGoodsContentText{
+	margin-top: 15%;
+}
+.hotGoods .hotGoodsContent .hotGoodsContentText p:nth-of-type(1){
+	font-size: 15px;
+	line-height: 21px;
+}
+.hotGoods .hotGoodsContent .hotGoodsContentText p:nth-of-type(2){
+margin-top: 10px;
+font-size: 24px;
+}
+.hotGoods .hotGoodsContent .hotGoodsContentText p:nth-of-type(2) span{
+	color: red;
+	padding-top:5px ;
+}
+.hotGoods .hotGoodsContent  a{
+	display: inline-block;
+	padding: 5px;
+	padding-right: 10px;
+	color: #FFFFFF;
+	position: absolute;
+	right: 24px;
+	bottom: 10px;
+	background-color: red;
+	
+}
+.hotGoods .hotGoodsContent  a:after{
+	content: '';
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	position: absolute;
+	right: -9px;
+	bottom: 4px;
+	transform: rotateZ(45deg);
+	background-color: red;
+}
+.hotGoods .hotGoodsContent  a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/*热门商品结束*/
+/*商品列表开始*/
+.goodsList{
+	height: 378px;
+}
+.goodsList .more{
+	height: 78px;
+}
+.goodsList .more a{
+	margin-top: 30px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+.goodsList .more a:hover{
+	color: rgb(67, 67, 67);
+}
+.goodsList .goodsListTable {
+	
+	border: 1px solid rgb(217,217,217);	
+	width: 900px;
+	height: 295px;
+	
+}
+.goodsList .goodsListTable .goodsListTableLeft{
+	width: 630px;
+}
+.goodsList .goodsListTable .goodsListTableLeft div{
+	color: #000000;
+	float: left;
+	width: 186px;
+	height: 126px;
+	border: 1px solid rgb(217,217,217);
+	padding: 10px;
+}
+/*动态数据样式*/
+.goodsList .goodsListTable .goodsListTableLeft div span{
+	font-size: 14px;
+	
+}
+.goodsList .goodsListTable .goodsListTableLeft div p{
+	font-size: 12px;
+	color: rgb(204, 204, 204);
+	
+}
+.goodsList .goodsListTable .goodsListTableLeft div img{
+	padding-top: 10px;
+	height: 90px;
+	width: 170px;
+	float: right;
+}
+
+
+
+.goodsList .goodsListTable .goodsListTableRight
+{
+	width: 270px;
+}
+.goodsList .goodsListTable .goodsListTableRight div{
+	float: right;
+	width: 256px;
+	height: 87px;
+	padding: 10px;
+	padding-bottom: 0;
+	
+	color: #000000;
+}
+.goodsList .goodsListTable .goodsListTableRight div span{
+	font-size: 14px;
+	
+}
+.goodsList .goodsListTable .goodsListTableRight div p{
+	font-size: 12px;
+	color: rgb(204, 204, 204);
+	
+}
+.goodsList .goodsListTable .goodsListTableRight div img{
+
+	height: 70px;
+	margin-top: -20px;
+	float: right;
+}
+.goodsList .goodsListTable .goodsListTableRight div:nth-of-type(2){
+	border-top: 1px solid rgb(217,217,217);
+	border-bottom: 1px solid rgb(217,217,217);
+	height: 89px;
+}
+.goodsList .goodsListShow {
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 20px;
+	margin-top: 206px;
+	width: 188px;
+	height: 88px;
+	background-color: rgb(242, 84, 83);
+}
+.goodsList:nth-of-type(5) .goodsListShow{
+	background-color:rgb(247, 169, 69);
+	}
+.goodsList:nth-of-type(6) .goodsListShow{
+	background-color:rgb(25, 200, 169);
+	}
+.goodsList .goodsListShow a{
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+.goodsList .goodsListShow p{
+	color: #fff;
+	padding-top: 10px;
+}
+/*商品列表结束*/
+/*价格商品开始*/
+.price{
+height: 588px;
+}
+.price .more{
+	height: 78px;
+}
+.price .more a{
+	float: right;
+	margin-top: 30px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+ .price .more a:hover{
+	color: rgb(67, 67, 67);
+}
+.price ul li  p a{
+	color: #5A5A5A;
+	text-decoration: none;
+}
+.price ul li  p a:hover{
+	color: #0064d4;
+}
+.price ul li  span{
+	color:#ff0000;
+	font-size: 17px;
+}
+/*价格商品公共部分结束*/
+.price .priceLeft{
+	display: inline-block;
+	width: 200px;
+	height: 460px;
+	border: 1px solid rgb(217,217,217);
+}
+.price .priceLeft li{
+	width: 100%;
+	height: 110px;
+	margin-bottom: 10px;
+}
+.price .priceLeft li a img{
+	width: 100px;
+}
+.price .priceLeft li .priceLIst{
+	    font-size: 13px;
+	    color: #ACACAC;
+}
+.price .priceRight{
+	display: inline-block;
+	width: 890px;
+}
+.price .priceRight li {
+	width: 207px;
+	height: 245px;
+	padding: 15px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	border: 1px solid rgb(238,238,238);
+	 color: #ACACAC;
+	 cursor: pointer;	
+	 float: right;
+	 box-sizing: border-box;
+	 
+}
+.price .priceRight li:hover{
+	border: 1px solid red;
+}
+.price .priceRight li img{
+	width: 175px;
+	height: 175px;
+		
+}
+.price .priceRight {
+	bd
+}
+/*价格商品结束*/
+/*底部开始*/
+
+/*底部结束*/
+

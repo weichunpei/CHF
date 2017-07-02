@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" type="text/css" href="../../common/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../common/font/iconfont.css" />
+		<link rel="stylesheet/less" href="user.less" />
+		<script src="../../common/js/less.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../common/js/jquery-2.2.0.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="user-center">
+			<div class="member">
+				<div class="u-header">
+					<div class="h-title fl">
+						<h2>会员中心</h2>
+					</div>
+					<div class="h-option fr">
+						<ul>
+							<li>
+								<a href="#"><i class="iconfont icon-wallet"></i><span>我的钱包</span></a>
+								<ul class="wallet-detail">
+									<li>
+										<a href="#"></a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><i class="iconfont icon-account"></i><span>账户设置</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="iconfont icon-message"></i><span>我的消息</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="iconfont icon-out"></i><span>退出</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="u-tab">
+					<ul>
+						<li class="active" data="0">
+							<a href="#">个人首页</a>
+						</li>
+						<li data="1">
+							<a href="#">我的订单</a>
+						</li>
+						<li data="2">
+							<a href="#">活动&优惠</a>
+						</li>
+						<li data="3">
+							<a href="#">买家问答</a>
+						</li>
+						<li data="4">
+							<a href="#">收货地址</a>
+						</li>
+					</ul>
+				</div>
+				<div class="u-content" id=personal>
+					<div class="private-page clearfix">
+						<div class="member-mess fl">
+							<div class="mess-left fl">
+								<img src="images/01.jpg" alt="" />
+							</div>
+							<div class="mess-center fl">
+								<p><span class="member-name">15631380641</span><span class="member-type">普通会员</span></p>
+								<ul>
+									<li>
+										<a href="#">
+											<p>&yen;0.00</p><span>可用余额</span></a>
+									</li>
+									<li>
+										<a href="#">
+											<p>0</p><span>积分</span></a>
+									</li>
+									<li>
+										<a href="#">
+											<p>0</p><span>优惠券</span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="mess-right fr">
+								<a href="#">
+									<img src="images/arrow01.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="member-vip fr">
+							<div class="vip-operate fl">
+								<img src="images/memberpic2.png" alt="" />
+								<p>VIP福利限免大放送</p>
+								<span>已领取</span>
+							</div>
+							<div class="member-img fr">
+								<img src="images/memberpic3.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="about-order">
+						<div class="latest-order fl">最近订单(<span>0</span>)</div>
+						<div class="all-order fr">
+							<a href="#">全部</a>
+							<i><img src="images/arrow01.png" alt="" /></i>
+						</div>
+					</div>
+				</div>
+				<div class="u-content my-oyder" style="display: none;">
+					<div class="order-header">
+						<h2 class="fl">我的订单</h2>
+						<ul class="fr">
+							<li class="active">
+								<a href="#">全部(<span>0</span>)</a>
+							</li>
+							<li class="order-line"></li>
+							<li>
+								<a href="#">待付款(<span>0</span>)</a>
+							</li>
+							<li class="order-line"></li>
+							<li>
+								<a href="#">代发货(<span>0</span>)</a>
+							</li>
+							<li class="order-line"></li>
+							<li>
+								<a href="#">待收货(<span>0</span>)</a>
+							</li>
+							<li class="order-line"></li>
+							<li>
+								<a href="#">待评价(<span>0</span>)</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="u-content my-oyder discount " style="display: none;">
+					<div class="order-header">
+						<h2 class="fl">活动&优惠</h2>
+						<ul class="fr">
+							<li class="active">
+								<a href="#">正在处理</a>
+							</li>
+							<li class="order-line"></li>
+							<li>
+								<a href="#">已经过期</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="u-content question " style="display: none;">
+					<h2>买家问答</h2>
+					<select name="" class="question-option fl">
+						<option value="">所有类型</option>
+						<option value="">留言</option>
+						<option value="">投诉</option>
+						<option value="">询问</option>
+						<option value="">售后</option>
+					</select>
+					<div class="question-item fl">
+						<p class="fr">共<span>0</span>条</p>
+					</div>
+				</div>
+				<div class="u-content address" style="display: none;">
+					<div class="address-title">
+						<h3>收货地址</h3>
+						<span  id='add-site'>添加新地址</span>
+					</div>
+					<div class="address-mess">
+						<div class="id fl">
+							1
+						</div>
+						<div class="info fl">
+							<p class="user">收货人: <span id='username'>张紫薇</span>&nbsp;&nbsp;手机: <span id="tel">15631380641</span></p>
+							<p class="site">
+								<span>陕西省</span> <span>西安市 </span> <span>雁塔区</span> <span>南门</span>
+							</p>
+						</div>
+						<div class="option fr">
+							<span>设为默认</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>修改</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span>删除</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="add-site-bg">
+			<div class="add-site">
+				<div class="title">
+					<h2 class="fl">添加新地址</h2>
+					<i class="fr" id="close">X</i>
+				</div>
+				<div class="site-info">
+					<form action="" method="post">
+						<input type="text" name="username" id="username" placeholder="收货人:" /><br />
+						<input type="tel" name="tel" id="tel" placeholder="手机/电话:" /><br />
+						<input type="number" name="postcode" id="postcode" placeholder="邮编" /><br />
+						<select name="" id="province">
+							<!--<option value="">省份:</option>-->
+						</select>
+						<select name="" id="city">
+							<!--<option value="">城市:</option>-->
+						</select>
+						<select name="" id="county">
+							<!--<option value="">区(县):</option>-->
+						</select><br />
+						<input type="text" name="" id="" placeholder="地址" /><br />
+						<input type="submit" value="保存收货信息" id="submit"/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="user.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

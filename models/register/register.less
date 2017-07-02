@@ -1,0 +1,130 @@
+
+.register {
+  width: 300px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 30px 0;
+  background: #EBE9E9;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  h2 {
+    font-size: 21px;
+    color: #eb9316;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+  .logInfo {
+    margin-top: 25px;
+    ul {
+      li {
+        width: 200px;
+        margin: 0 50px;
+        margin-bottom: 15px;
+        position: relative;
+        font-size: 15px;
+        text-align: center;
+        span{
+          margin-left: -150px;
+        }
+        .s1{
+          position: absolute;
+          top: 10px;
+          left: 11px;
+          color: #eb6100;
+        }
+        .id {
+          background: #FFFFFF;
+          border: none;
+          width: 188px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 14px;
+          color: #B1B1B1;
+          padding-left: 22px;
+          border-radius: 3px;
+        }
+        .formplate .remword {
+          margin: 0 auto;
+          margin-left: 10px;
+          .fp-checkbox {
+            vertical-align: top;
+            background: #FFFFFF;
+            border: none;
+            display: inline-block;
+            position: relative;
+            margin-right: 6px;
+            margin-top: 0px;
+            margin-bottom: 2px;
+            width: 22px;
+            height: 22px;
+            input {
+              padding: 0px;
+              margin: 0px;
+              display: inline-block;
+              width: 20px;
+              height: 22px;
+              opacity: 0;
+              box-sizing: border-box;
+              background: #FFFFFF;
+            }
+          }
+          label {
+            cursor: pointer;
+            padding-left: 6px;
+            max-width: 82%;
+            font-family: 'Microsoft YaHei';
+          }
+        }
+        .submitbtn {
+          width: 200px;
+          height: 35px;
+          background: none;
+          border: none;
+          background: #eb6100;
+          color: #FFF;
+          border-radius: 3px;
+          cursor: pointer;
+          letter-spacing: 2px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .alink {
+    width: 208px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .closebtn {
+    width: 38px;
+    height: 38px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 20px;
+    right: -38px;
+
+    a {
+      background: url("../../common/images/popclose.png") no-repeat center center;
+      opacity: 1;
+      display: block;
+      width: 38px;
+      height: 38px;
+      transition: transform 1s;
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.right{
+  color: green;
+}
+.wrong{
+  color: red;
+}

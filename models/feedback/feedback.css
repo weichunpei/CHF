@@ -1,0 +1,140 @@
+/*头部开始*/
+.tHeade{
+	height: 190px;
+	
+}
+/*头部结束*/
+/*身体开始*/
+.tBody{
+	height: 940px;
+	box-shadow:-1px 2px 5px 7px #D5D5D5;
+	margin-top: 15px;
+}
+.tBody .tBodyTitle{
+	width: 100%;
+	height: 34px;
+	background-color: rgb(233, 233, 233);
+	line-height: 34px;
+	font-size: 16px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.tBody  .tBodyContent{
+	padding: 25px 40px;
+}
+.tBody .tBodyContent .callMe{
+	width: 100%;
+	height: 34px;
+	background-color: rgb(243, 243, 243);
+	line-height: 34px;
+	padding-left: 10px;
+}
+.tBody .tBodyContent .callMeMssage{
+	padding: 40px 25px;
+	
+}
+.tBody .tBodyContent .callMeMssage p{
+	    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0px;
+    font-stretch: inherit;
+    font-size: 14px;
+    line-height: 21px;
+}
+.tBody .tBodyContent .callMeMssage ol li{
+	margin-left: 42px;
+	list-style:decimal;
+}
+.tBody .tBodyContent .feedBack .feedBackContent{
+	width: 350px;
+	margin: 40px auto ;
+	background: red;
+	
+}
+.tBody .tBodyContent .feedBack .feedBackContent input{
+	float: left;
+    width: 350px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    word-spacing: 0px;
+    padding: 2px;
+    font-family: Microsoft YaHei;
+    border-radius: 2px ;
+    border: 1px;
+    border-color: #d6d6d6;
+    border-style: solid;
+    clear: both;
+    margin-top: 3px;
+    margin-left: 0px;
+    box-shadow: 1px 1px 1px  #D5D5D5 inset;
+}
+.tBody .tBodyContent .feedBack .feedBackContent label{float: left;
+    width: 356px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #ffffff;
+    background-image: none;
+    font-size: 14px;
+    color: #434343;
+    text-align: left;
+    word-spacing: 0px;
+    padding: 0px;
+    border: 0px;
+    border-color: #333333;
+    border-style: none;
+    clear: both;
+    margin-top: 0px;
+    margin-left: 0px;}
+    .tBody .tBodyContent .feedBack .feedBackContent textarea{
+    	float: left;
+    width: 350px;
+    height: 122px;
+    line-height: 24px;
+    background-color: #fff;
+    background-image: none;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    word-spacing: 0px;
+    padding: 2px;
+    font-family: Microsoft YaHei;
+    border: 1px;
+    border-color: #d6d6d6;
+    border-style: solid;
+    clear: both;
+    margin-top: 3px;
+    margin-left: 0px;
+    box-shadow: 1px 1px 1px  #D5D5D5 inset;
+    }
+    .tBody .tBodyContent .feedBack .feedBackContent button{float: left;
+    cursor: pointer;
+    width: 97px;
+    height: 31px;
+    line-height: 31px;
+    background-color: #ff0000;
+    background-image: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    word-spacing: 0px;
+    padding: 0px;
+    font-family: SimSun;
+    border: 0px;
+    border-color: #ff0000;
+    border-style: solid;
+    clear: both;
+    margin-top: 18px;
+    margin-left: 0px;}
+/*身体结束*/
+/*底部开始*/
+.foot{
+	height: 110px;
+	padding-top: 43px;
+}
+/*底部结束*/
+

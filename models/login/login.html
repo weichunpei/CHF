@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="common/css/reset.css" />
+		<link rel="stylesheet/less" href="models/login/login.less" />
+		<script src="common/js/less.js"></script>
+	</head>
+
+	<body>
+		<!--登录-->
+		<div class="Login">
+			<h2>欢迎登录</h2>
+
+			<!--<form action="">-->
+				<div class="logInfo">
+					<ul>
+						<li>
+							<input type="text" placeholder="邮箱/手机号" class="id" />
+							<span id="log_1"></span>
+						</li>
+						<li>
+							<input type="text" placeholder="密码" class="idm" />
+							<span id="log_2"></span>
+						</li>
+						<li>
+							<div class="formplate" style="width: 125px">
+								<span class="fp-checkbox">
+                            <input type="checkbox" name="remembered" value="1"/>
+                        </span>
+								<label>下次自动登录</label>
+							</div>
+						</li>
+						<li>
+							<button class="submitbtn">登录</button>
+							<span></span>
+						</li>
+					</ul>
+				</div>
+			<!--</form>-->
+			<div class="alink">
+				<a href="#" class="first">用户注册</a>
+			</div>
+			<div class="closebtn">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="models/login/login.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,418 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    >.user-center {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .25);
+//      box-shadow: 5px 5px 5px #ccc;
+        position: relative;
+        >.member {
+            width: 990px;
+            height: 525px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 12px;
+            overflow: hidden;
+            >.u-header {
+                height: 70px;
+                background-color: #EB6100;
+                //              overflow: hidden;
+                >.h-title {
+                    line-height: 70px;
+                    margin-left: 35px;
+                    color: #fff;
+                    font-family: "微软雅黑";
+                    >h2 {
+                        font-size: 22px;
+                        font-weight: normal;
+                    }
+                }
+                >.h-option {
+                    height: 70px;
+                    >ul {
+                        line-height: 70px;
+                        >li {
+                            float: left;
+                            margin-right: 30px;
+                            >a {
+                                color: white;
+                                font-size: 14px;
+                                &:hover {
+                                    color: white;
+                                }
+                                i {
+                                    display: inline-block;
+                                    height: 100%;
+                                    font-size: 24px;
+                                    padding-right: 10px;
+                                    vertical-align: middle;
+                                    &:hover {
+                                        visibility: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            >.u-tab {
+                float: left;
+                height: 455px;
+                width: 150px;
+                background-color: #F7F7F7;
+                >ul {
+                    margin-top: 100px;
+                    >li {
+                        height: 50px;
+                        box-sizing: border-box;
+                        border-top: 1px solid #e1e1e1;
+                        border-bottom: 1px solid #e1e1e1;
+                        border-right: 5px solid #F7F7F7;
+                        line-height: 50px;
+                        text-align: center;
+                        &:hover {
+                            border-right: 5px solid #eb6100;
+                        }
+                        >a {
+                            font-size: 14px;
+                            color: #9c9c9c;
+                            &:hover {
+                                color: #eb6100;
+                            }
+                        }
+                    }
+                    .active {
+                        border-right: 5px solid #eb6100;
+                        a {
+                            color: #eb6100;
+                        }
+                    }
+                }
+            }
+            >.u-content {
+                float: right;
+                height: 455px;
+                width: 840px;
+                .private-page {
+                    width: 785px;
+                    height: 145px;
+                    box-sizing: border-box;
+                    border: 1px solid #e1e1e1;
+                    margin: 35px auto 0 auto;
+                    >.member-mess {
+                        width: 458px;
+                        height: 100%;
+                        padding: 28px;
+                        padding-right: 0px;
+                        box-sizing: border-box;
+                        border-right: 1px solid #e1e1e1;
+                        position: relative;
+                        >.mess-left {
+                            height: 100%;
+                            >img {
+                                height: 100%;
+                            }
+                        }
+                        >.mess-right {
+                            height: 100%;
+                            line-height: 89px;
+                            position: absolute;
+                            right: 20px;
+                            a {
+                                >img {
+                                    width: 21px;
+                                    height: 39px;
+                                }
+                            }
+                        }
+                        >.mess-center {
+                            margin-left: 25px;
+                            >p {
+                                margin-bottom: 15px;
+                                >.member-name {
+                                    font-size: 16px;
+                                }
+                                >.member-type {
+                                    border: 1px solid #e1e1e1;
+                                    border-radius: 3px;
+                                    padding: 3px 5px;
+                                    margin-left: 15px;
+                                }
+                            }
+                            >ul {
+                                >li {
+                                    border-left: 1px solid #e1e1e1;
+                                    float: left;
+                                    width: 90px;
+                                    padding: 8px 0 8px 10px;
+                                    >a {
+                                        >p {
+                                            font-size: 18px;
+                                            color: #eb6100;
+                                            margin-bottom: 3px;
+                                        }
+                                        >span {
+                                            font-size: 14px;
+                                            color: #9c9c9c;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    >.member-vip {
+                        width: 325px;
+                        >.vip-operate {
+                            text-align: center;
+                            width: 50%;
+                            padding: 20px 0;
+                            >p {
+                                font-size: 14px;
+                                margin: 10px 0;
+                            }
+                            >span {
+                                padding: 3px 5px;
+                                border-radius: 5px;
+                                background-color: #b5b5b5;
+                                color: #fff;
+                            }
+                        }
+                        >.member-img {
+                            text-align: center;
+                            box-sizing: border-box;
+                            width: 50%;
+                            padding: 20px 0;
+                            border-left: 1px solid #e1e1e1;
+                        }
+                    }
+                }
+                >.about-order {
+                    margin-top: 50px;
+                    font-size: 16px;
+                    box-sizing: border-box;
+                    padding: 0 27.5px;
+                    color: #9c9c9c;
+                    >.latest-order {
+                        >span {
+                            color: #eb6100;
+                        }
+                    }
+                    >.all-order {
+                        >a {
+                            color: #9c9c9c;
+                        }
+                        >i {
+                            >img {
+                                width: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            >.my-oyder {
+                >.order-header {
+                    margin: 0 30px;
+                    height: 70px;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #e1e1e1;
+                    >h2 {
+                        font-size: 20px;
+                        color: #717171;
+                        margin-top: 40px;
+                        font-weight: normal;
+                    }
+                    >ul {
+                        margin-top: 20px;
+                        line-height: 50px;
+                        >li {
+                            float: left;
+                            font-size: 14px;
+                            >a {
+                                display: inline-block;
+                                height: 48px;
+                                box-sizing: border-box;
+                                >span {
+                                    color: #eb6100;
+                                }
+                                &:hover {
+                                    border-bottom: 4px solid #eb6100;
+                                }
+                            }
+                        }
+                        .active {
+                            >a {
+                                border-bottom: 4px solid #eb6100;
+                                color: #eb6100;
+                            }
+                        }
+                        >li:last-of-type {
+                            margin-right: 20px;
+                        }
+                        >.order-line {
+                            margin: 12px 25px;
+                            width: 1px;
+                            height: 25px;
+                            background-color: #E1E1E1;
+                        }
+                    }
+                }
+            }
+            .question {
+                >h2 {
+                    font-size: 20px;
+                    color: #717171;
+                    margin: 40px 0 10px 30px;
+                    font-weight: normal;
+                }
+                >.question-option {
+                    width: 150px;
+                    height: 35px;
+                    margin-left: 30px;
+                    outline: none;
+                    border: none;
+                    border: 1px solid #e1e1e1;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                    font-size: 12px;
+                    color: #9c9c9c;
+                }
+                >.question-item {
+                    width: 620px;
+                    box-sizing: border-box;
+                    height: 35px;
+                    border: 1px solid #e1e1e1;
+                    vertical-align: middle;
+                    line-height: 35px;
+                    >p {
+                        margin-right: 10px;
+                        span {
+                            color: #eb6100;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+            >.address {
+                >.address-title {
+                    margin: 0 20px;
+                    height: 70px;
+                    border-bottom: 1px solid #E1E1E1;
+                    >h3 {
+                        float: left;
+                        font-size: 20px;
+                        line-height: 70px;
+                    }
+                    >span {
+                        float: right;
+                        width: 105px;
+                        height: 40px;
+                        border-radius: 5px;
+                        box-sizing: border-box;
+                        background-color: #EB6100;
+                        color: #fff;
+                        margin-top: 15px;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+                >.address-mess {
+                    margin: 0 20px;
+                    height: 125px;
+                    border-bottom: 1px solid #E1E1E1;
+                    >.id {
+                        text-align: center;
+                        line-height: 54px;
+                        font-size: 40px;
+                        color: #959595;
+                        width: 54px;
+                        height: 54px;
+                        border: 1px solid #e1e1e1;
+                        border-radius: 50%;
+                        margin-top: 35px;
+                        vertical-align: middle;
+                    }
+                    >.info {
+                        margin-left: 35px;
+                        margin-top: 40px;
+                        >.user {
+                            margin-bottom: 5px;
+                        }
+                    }
+                    >.option {
+                        line-height: 125px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    >.add-site-bg {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        >.add-site{
+            width: 390px;
+            height: 470px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            >.title{
+                height: 80px;
+                line-height: 80px;
+                color: #707070;
+                >h2{
+                    font-size: 20px;
+                }
+                >i{
+                    font-style: normal;
+                    font-size: 50px;
+                    cursor: pointer;
+                }
+            }
+            >.site-info{
+               >form{
+                   >input{
+                       width: 330px;
+                       height: 40px;
+                       outline: none;
+                       border: 1px solid #e1e1e1;
+                       padding-left: 15px;
+                       margin-bottom: 20px;
+                   }
+                   >#submit{
+                       background-color: #EB6100;
+                       border-radius: 5px;
+                       font-size: 16px;
+                       color: #fff;
+                   }
+                   >select{
+                       width: 105px;
+                       height: 40px;
+                       margin-bottom: 20px;
+                       text-align: center;
+                   }
+                  >select:nth-of-type(2){
+                      margin: 0 10px;
+                  }
+               }
+            }
+        }
+    }
+}
