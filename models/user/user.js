@@ -85,5 +85,22 @@ $(function() {
 	$("#submit").on('click',function(){
 		
 	})
-
+	//显示会员名称
+	var username = sessionStorage.getItem('username');
+	console.log(username);
+	if(username){
+		$(".member-name").text(username);
+	}
+	//钱包详情的显示隐藏
+	$('.h-option li:eq(0)').on('mouseover',function(){
+		$(this).find('ul').css({
+			'height':'130px',
+			' transition':'height 1s linear'
+		})
+	}).on('mouseout',function(){
+		$(this).find('ul').css({
+			'height':'0px',
+			' transition':'height 0.5s linear'
+		})
+	})
 });

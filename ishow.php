@@ -1,12 +1,11 @@
 <?php
  require_once 'common/comment/config.php';
- $query=mysql_query("select * from xcf_product");
+ $query=mysqli_query("select * from xcf_product");
     $flag = false;
-while ($row=mysql_fetch_array($query)) {
+while ($row=mysqli_fetch_array($query)) {
 	$flag = true;
 	$sayList[] = array(
 
-	
 		'pid'=>$row['pid'],
 		'cid'=>$row['cid'],
 		'pname'=>$row['pname'],

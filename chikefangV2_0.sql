@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 06 月 27 日 08:42
+-- 生成日期: 2017 年 07 月 03 日 08:11
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -23,20 +23,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 表的结构 `category`
+-- 表的结构 `xcf_category`
 --
 
-CREATE TABLE IF NOT EXISTS `category` (
+CREATE TABLE IF NOT EXISTS `xcf_category` (
   `cid` varchar(32) NOT NULL,
   `cname` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`cid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `category`
+-- 转存表中的数据 `xcf_category`
 --
 
-INSERT INTO `category` (`cid`, `cname`) VALUES
+INSERT INTO `xcf_category` (`cid`, `cname`) VALUES
 ('1', '速冻食品'),
 ('2', '电脑办公'),
 ('3', '家具家居'),
@@ -50,10 +50,10 @@ INSERT INTO `category` (`cid`, `cname`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `feedback`
+-- 表的结构 `xcf_feedback`
 --
 
-CREATE TABLE IF NOT EXISTS `feedback` (
+CREATE TABLE IF NOT EXISTS `xcf_feedback` (
   `name` varchar(10) NOT NULL,
   `phone` int(11) NOT NULL,
   `content` text NOT NULL,
@@ -62,10 +62,10 @@ CREATE TABLE IF NOT EXISTS `feedback` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=24 ;
 
 --
--- 转存表中的数据 `feedback`
+-- 转存表中的数据 `xcf_feedback`
 --
 
-INSERT INTO `feedback` (`name`, `phone`, `content`, `id`) VALUES
+INSERT INTO `xcf_feedback` (`name`, `phone`, `content`, `id`) VALUES
 ('测试', 111, '111', 1),
 ('测试', 111, '111', 2),
 ('11', 111, '111', 3),
@@ -93,10 +93,10 @@ INSERT INTO `feedback` (`name`, `phone`, `content`, `id`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `orderitem`
+-- 表的结构 `xcf_orderitem`
 --
 
-CREATE TABLE IF NOT EXISTS `orderitem` (
+CREATE TABLE IF NOT EXISTS `xcf_orderitem` (
   `itemid` varchar(32) NOT NULL,
   `count` int(11) DEFAULT NULL,
   `subtotal` double DEFAULT NULL,
@@ -110,10 +110,10 @@ CREATE TABLE IF NOT EXISTS `orderitem` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `orders`
+-- 表的结构 `xcf_orders`
 --
 
-CREATE TABLE IF NOT EXISTS `orders` (
+CREATE TABLE IF NOT EXISTS `xcf_orders` (
   `oid` varchar(32) NOT NULL,
   `ordertime` datetime DEFAULT NULL,
   `total` double DEFAULT NULL,
@@ -128,10 +128,10 @@ CREATE TABLE IF NOT EXISTS `orders` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `product`
+-- 表的结构 `xcf_product`
 --
 
-CREATE TABLE IF NOT EXISTS `product` (
+CREATE TABLE IF NOT EXISTS `xcf_product` (
   `pid` varchar(32) NOT NULL,
   `pname` varchar(50) DEFAULT NULL,
   `market_price` double DEFAULT NULL,
@@ -149,10 +149,10 @@ CREATE TABLE IF NOT EXISTS `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `product`
+-- 转存表中的数据 `xcf_product`
 --
 
-INSERT INTO `product` (`pid`, `pname`, `market_price`, `shop_price`, `pimage`, `pdate`, `is_hot`, `pdesc`, `pflag`, `cid`, `pnum`) VALUES
+INSERT INTO `xcf_product` (`pid`, `pname`, `market_price`, `shop_price`, `pimage`, `pdate`, `is_hot`, `pdesc`, `pflag`, `cid`, `pnum`) VALUES
 ('01', '沈大成—虾仁小馄饨', NULL, 7.5, 'xrxhd.jpg', '2017-06-21', 1, '沈大成—虾仁小馄饨', NULL, '1', 10),
 ('02', '思念—葱香手抓饼', NULL, 14.5, 'cxszb.jpg', '2017-06-21', 1, '思念—葱香手抓饼', NULL, '1', 12),
 ('03', '湾仔码头—荠菜云吞', NULL, 28.5, 'jcyt.jpg', '2017-06-21', 1, '湾仔码头—荠菜云吞', NULL, '1', 10),
@@ -199,10 +199,10 @@ INSERT INTO `product` (`pid`, `pname`, `market_price`, `shop_price`, `pimage`, `
 -- --------------------------------------------------------
 
 --
--- 表的结构 `user`
+-- 表的结构 `xcf_user`
 --
 
-CREATE TABLE IF NOT EXISTS `user` (
+CREATE TABLE IF NOT EXISTS `xcf_user` (
   `uid` varchar(32) NOT NULL,
   `username` varchar(20) DEFAULT NULL,
   `password` varchar(20) DEFAULT NULL,
@@ -217,10 +217,10 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- 转存表中的数据 `user`
+-- 转存表中的数据 `xcf_user`
 --
 
-INSERT INTO `user` (`uid`, `username`, `password`, `name`, `email`, `telephone`, `birthday`, `sex`, `state`, `code`) VALUES
+INSERT INTO `xcf_user` (`uid`, `username`, `password`, `name`, `email`, `telephone`, `birthday`, `sex`, `state`, `code`) VALUES
 ('373eb242933b4f5ca3bd43503c34668b', 'ccc', 'ccc', 'aaa', 'bbb@store.com', '15723689921', '2015-11-04', '男', 0, '9782f3e837ff422b9aee8b6381ccf927bdd9d2ced10d48f4ba4b9f187edf7738'),
 ('3ca76a75e4f64db2bacd0974acc7c897', 'bb', 'bb', '张三', 'bbb@store.com', '15723689921', '1990-02-01', '男', 0, '1258e96181a9457987928954825189000bae305094a042d6bd9d2d35674684e6'),
 ('62145f6e66ea4f5cbe7b6f6b954917d3', 'cc', 'cc', '张三', 'bbb@store.com', '15723689921', '2015-11-03', '男', 0, '19f100aa81184c03951c4b840a725b6a98097aa1106a4a38ba1c29f1a496c231'),
@@ -232,17 +232,17 @@ INSERT INTO `user` (`uid`, `username`, `password`, `name`, `email`, `telephone`,
 --
 
 --
--- 限制表 `orderitem`
+-- 限制表 `xcf_orderitem`
 --
-ALTER TABLE `orderitem`
-  ADD CONSTRAINT `fk_0001` FOREIGN KEY (`pid`) REFERENCES `product` (`pid`),
-  ADD CONSTRAINT `fk_0002` FOREIGN KEY (`oid`) REFERENCES `orders` (`oid`);
+ALTER TABLE `xcf_orderitem`
+  ADD CONSTRAINT `fk_0001` FOREIGN KEY (`pid`) REFERENCES `xcf_product` (`pid`),
+  ADD CONSTRAINT `fk_0002` FOREIGN KEY (`oid`) REFERENCES `xcf_orders` (`oid`);
 
 --
--- 限制表 `product`
+-- 限制表 `xcf_product`
 --
-ALTER TABLE `product`
-  ADD CONSTRAINT `sfk_0001` FOREIGN KEY (`cid`) REFERENCES `category` (`cid`);
+ALTER TABLE `xcf_product`
+  ADD CONSTRAINT `sfk_0001` FOREIGN KEY (`cid`) REFERENCES `xcf_category` (`cid`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
