@@ -1,6 +1,8 @@
 <?php
  require_once 'common/comment/config.php';
  $query=mysqli_query("select * from xcf_product");
+ print_r($query);
+ echo '<hr/>';
     $flag = false;
 while ($row=mysqli_fetch_array($query)) {
 	$flag = true;
@@ -18,9 +20,9 @@ while ($row=mysqli_fetch_array($query)) {
 		
       );
 }
-if($flag){
-   echo json_encode($sayList);
-}else{
-	echo true;
-}
+//if($flag){
+// echo json_encode($sayList);
+//}else{
+//	echo true;
+//}
 ?>
